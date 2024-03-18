@@ -1,0 +1,647 @@
+.shop__cat{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-top: 36px;
+}
+.shop__cat li{
+    margin-right: 22px;
+}
+.shop__link h1{
+    margin-bottom: 46px;
+}
+.category a{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 14px 29px 14px 29px;
+    border: 2px solid black;
+    border-radius: 22px;
+    color: black;
+}
+.category{
+	margin-right: 25px;
+}
+.category a:hover{
+    background: #dec80d;
+}
+.auction{
+    margin-top: 57px;
+}
+.auction-ajax-change{
+    display: none;
+}
+.product-cats{
+	display: flex;
+	flex-direction: row;
+}
+.product-cat{
+	display: flex;
+    justify-content: center;
+}
+.product-cat a{
+	font-family: 'Poppins', sans-serif;
+	font-size: 23px;
+	font-weight: 600;
+	color: #36383e;
+}
+.products{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.product{
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-top: 18px;
+	padding-left: 22px;
+    padding-bottom: 30px;
+	margin-top: 55px;
+	background-color: #ffff;
+	border-radius: 10px;
+	background-color: rgb(255, 255, 255);
+    box-shadow: 0px 13px 25px 0px rgba(0, 0, 0, 0.1);
+}
+.category-thumb{
+	width: 23px;
+}
+.woocommerce-loop-product__title{
+	display: flex;
+    justify-content: center;
+	font-family: 'Poppins', sans-serif;
+	font-size: 18px;
+	font-weight: 500;
+	color: #36383e;
+
+}
+.price{
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 700;
+	font-size: 15px;
+	color: #3d7ba4;
+	padding-top: 12px;
+	padding-bottom: 10px;
+}
+.auction-time{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+	font-family: 'Poppins', sans-serif;
+	font-size: 20px;
+	font-weight: 600;
+	color: #36383e;
+}
+.auction-time.future{
+    display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+	font-family: 'Poppins', sans-serif;
+	font-size: 20px;
+	font-weight: 600;
+	color: #36383e;
+}
+.auction-time::before{
+	content:"";
+	background-image: url('http://auction.dising-developer.fun/wp-content/themes/auction_wp/img/time.png');
+	width:25px;
+	height:25px;
+
+}
+.auction-time-countdown{
+    font-family: 'Poppins', sans-serif;
+	font-size: 9px;
+	font-weight: 700;
+	color: #dec80d;
+} 
+.product:hover {
+	box-shadow: 0px 13px 25px 0px rgba(193, 173, 0, 0.28);
+  }
+.main-auction span{
+	font-family: 'Poppins', sans-serif;
+	font-size: 19px;
+	font-weight: 700;
+	color: #dec80d;
+}
+.attachment-woocommerce_thumbnail{
+	margin: 20px;
+}
+.auction-end{
+	display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.auction__btn{
+	display: flex;
+	justify-content: center;
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	color: #36383e;
+	border-radius: 60px;
+	border: 2px solid #36383e;
+    margin-left: 95px;
+    margin-right: 95px;
+    margin-top: 32px;
+    margin-bottom: 30px;
+    padding: 18px 20px 18px 20px;
+	
+}
+.auction__btn:hover{
+	background-color: #a5d6f7;
+}
+/* woocommerce-pagination */
+.woocommerce-pagination{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+.page-numbers{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+}
+.page-numbers li{
+    padding: 4px 12px 4px 12px;
+    width: 36px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: 2px solid #a5d6f7;
+    box-shadow: 0px 3px 5px 0px rgb(0 0 0 / 30%);
+    border-radius: 50%;
+}
+.page-numbers li:hover{
+    background-color: #a5d6f7;
+    
+}
+.page-numbers li:last-child{
+    border: none;
+    box-shadow: none;
+}
+.next{
+    display: none;
+    width: 10px;
+}
+/* .woocommerce{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+.reg-form{
+    display: flex;
+    flex-direction: row;
+}
+.regform__item{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.chetbox__name{
+    width: 100%;
+}
+.reg-form{
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 13px 25px 0px rgba(0, 0, 0, 0.1);      
+}
+.reg__title{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-top: 41px;
+    padding-left: 44px;
+    padding-bottom: 32px;
+}
+.reg__title h3{
+    font-size: 21px;
+    font-family: "Poppins";
+    color: rgb(54, 56, 62);
+    font-weight: 600;      
+}
+
+.reg__input{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 41px;
+}
+.submit__registr{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 41px;
+    padding-bottom: 61px;
+    padding-top: 40px;
+}
+.chetbox__register{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 41px;
+}
+.item-pass h3{
+    padding-top: 41px;
+    font-size: 21px;
+    font-family: "Poppins";
+    color: rgb(54, 56, 62);
+    font-weight: 600;  
+    padding-bottom: 32px;
+}
+/* login form */
+.woo__login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 24px;
+}
+.woo__login label{
+        font-size: 16px;
+        font-family: "Poppins";
+        color: rgb(54, 56, 62);
+        font-weight: bold;
+}
+.woocommerce-form-login__submit{
+        border-radius: 25px;
+        background-color: rgb(165, 214, 247);
+        box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.31);
+        width: 153px;
+        height: 50px;
+        font-size: 16px;
+        font-family: "Poppins";
+        color: rgb(54, 56, 62);
+        font-weight: bold;
+          
+
+      
+}
+.login__title{
+        font-family: 'Poppins', sans-serif;
+        font-size: 37px;
+        font-family: "Poppins";
+        color: rgb(54, 56, 62);
+        font-weight: bold;
+        margin-bottom: 36px;
+        text-align: center;
+}
+/*product single*/
+#auction{
+    width: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 13px 25px 0px rgba(0, 0, 0, 0.1);
+}
+
+
+.wrapper__auction{
+    display: flex;
+    flex-direction: row;
+    margin-top: 48px;
+    padding-left: 80px;
+    padding-right: 90px;
+
+}
+.auction__header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 150px;
+    border-radius: 15px;
+    background-color: #ffffff;
+    box-shadow: 0px 13px 25px 0px rgba(0, 0, 0, 0.1);
+}
+.item__auction{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+
+}
+.auction_form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.auction_form span{
+    position: absolute;
+    padding-bottom: 80px;
+    padding-left: 0px;
+}
+input[name=bid_value]{
+    width: 314px;
+    height: 52px;
+    border-radius: 5px;
+    background-color: rgb(227, 237, 243);
+    font-family: 'Poppins', sans-serif;
+    font-size: 21px;
+    font-weight: bold;
+    padding-left: 20px;
+}
+.plus{
+    display: none;
+}
+.minus{
+    display: none;
+}
+
+.quantity{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+.bid_button{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 21px;
+    background-color: #dec80d !important;
+    margin-left: 20px;
+    border-radius: 25px;
+    padding: 10px 40px 10px 40px;
+}
+.price__likme{
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+}
+.single__price{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+}
+.woocommerce-Price-amount{
+    color: #dec80d;
+}
+.price__likme span{
+    color: #3d7ba4;
+}
+.wsawl-link{
+    display: none;
+}
+.product_meta span{
+    font-family: 'Poppins', sans-serif;
+    font-size: 34px;
+    font-weight: bold;
+    text-decoration: black;
+}
+.product_title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    margin-top: 25px;
+    margin-bottom: 60px;
+}
+.item__auction h2{
+    display: none;
+}
+.simle_auction_history_tab{
+    display: none;
+}
+.woocommerce-product-gallery__trigger img{
+    width: 20px;
+    height: 20px;
+}
+.woocommerce-product-gallery{
+    margin-top: 35px;
+    margin-bottom: 75px;
+}
+.auction-history-table{
+    margin-left: 36px;
+
+}
+caption{
+    text-align: left;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+th{
+    text-align: left;
+    padding-right: 136px;
+}
+td{
+    padding-bottom: 14px;
+    padding-top: 14px;
+    border-bottom: 1px solid #d7d9dd;
+}
+
+.item__login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.login__form{
+    padding-top: 20px;
+}
+.woo__submit{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+.woocommerce-ResetPassword{
+    margin: 0 auto;
+    width: 381px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #ffff;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 13px 25px 0px rgba(0, 0, 0, 0.1);
+}
+.wrapp__reset{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.woocommerce-LostPassword{
+    text-align: center;
+}
+.login__form{
+    background-color: #ffff;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 13px 25px 0px rgba(0, 0, 0, 0.1);
+    padding: 40px 50px 40px 50px;
+}
+.rezet__login{
+    text-align: center;
+    max-width: 466px;
+    margin-bottom: 40px;
+}
+.simple-auctions h2{
+    display: none;
+}
+.woocommerce-MyAccount-navigation ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.woocommerce-MyAccount-navigation-link{
+    list-style-type: none;
+    border: 2px solid #36383e;
+    padding: 12px 20px 12px 20px;
+    border-radius: 19px;
+    margin-left: 9px;
+    margin-right: 9px;
+}
+.woocommerce-MyAccount-navigation-link:hover{
+    background-color: #dec80d;
+}
+.edit__title{
+    padding-bottom: 11px;
+    font-size: 21px;
+    font-family: "Poppins";
+    color: rgb(54, 56, 62);
+    font-weight: 600;
+    text-align: left;
+}
+.edit__text{
+    text-align: left;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Poppins";
+    color: rgb(54, 56, 62);
+    
+}
+.woocommerce-MyAccount-content{
+    margin-top: 60px;
+}
+.pay__wrapp{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.pay__wrapp a::before{
+    content: url("./img/win.png");
+    position: absolute;
+    margin-left: 160px;
+}
+/* orderi */
+.orderi__btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.button-ordering{
+    display: none;
+}
+.btn__active{
+    padding: 12px 24px 12px 24px;
+    border: 2px solid #36383e;
+    margin-right: 30px;
+    border-radius: 25px;
+    background: none;
+}
+.btn__active:hover{
+    background-color: #dec80d;
+}
+.woocommerce-form-register{
+    margin-top: 34px;
+}
+
+@media (max-width: 480px){
+     /* registracia */
+        .reg-form{
+            flex-direction: column-reverse;
+        }
+        .item-pass{
+            width: 100%;
+            padding-left: 41px;
+        }
+        .item-pass h3{
+            padding-left: 41px;
+        }
+        .regform__item{
+            width: 100%;
+        }
+        .reg__input{
+            width: 100%;
+        }
+        .submit__registr{
+            flex-direction: column;
+        }
+        /* auction */
+        .auction__header{
+            flex-direction: column;
+            justify-content: space-between;
+            height: 400px;
+        }
+        .auction_form{
+            flex-direction: column;
+        }
+        .item__heder{
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+        .hasCountdown {
+            padding: 5px;
+        }
+        .bid_button{
+            margin-top: 30px;
+        }
+        .quantity{
+            margin-top: 30px;
+        } 
+        .wrapper__auction{
+            flex-direction: column;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        .item__auction {
+            width: 100% !important;
+        }
+        .auction-history-table{
+            margin-left: 5px;
+        }
+        th{
+            padding-right: 12px;
+        } 
+        .item__heder{
+            padding-top: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+        .pay__wrapp{
+            display: flex;
+            flex-direction: column;
+            
+        }
+        .pay__wrapp p{
+            padding-top: 10px;
+            padding-bottom: 20px;
+        }
+        .pay__wrapp a::before{
+            content: url("./img/win.png");
+            position: absolute;
+            margin-left: 10px;
+            margin-top: 50px;
+        }
+        .woocommerce-MyAccount-navigation ul{
+            display: flex;
+            flex-direction: column;
+            padding-left: 5px;
+        }
+        .woocommerce-MyAccount-navigation li{
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        .button{
+            margin-left: 110px;
+        } 
+}

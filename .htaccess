@@ -1,0 +1,21 @@
+# BEGIN LSCACHE
+# END LSCACHE
+# BEGIN NON_LSCACHE
+# END NON_LSCACHE
+
+# BEGIN WordPress
+# Direktīvas (līnijas) starp `BEGIN WordPress` and `END WordPress` ir
+# dinamiski ģenerētas un tās vajadzētu modificēt vienīgi izmantojot WordPress filtrus.
+# Jebkuras izmaiņas šajās direktīvās starp iezīmēm tiks pārrakstītas.
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+php_value memory_limit 256M
+</IfModule>
+
+# END WordPress
